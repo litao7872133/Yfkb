@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--启动页背景-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/white" />
+    <item android:bottom="200dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/ic_welcome" />
+    </item>
+
+    <item android:bottom="72dp">
+        <bitmap
+            android:gravity="center_horizontal|bottom"
+            android:src="@mipmap/ic_welcome_02" />
+    </item>
+
+</layer-list>

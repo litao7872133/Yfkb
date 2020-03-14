@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9B3D</color>
+    <color name="colorPrimaryDark">#EF8B2D</color>
+    <color name="colorAccent">#FF9B3D</color>
+
+    <!--常用颜色-->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#3C8EDB</color>
+    <color name="green">#27B24A</color>
+    <color name="red">#FA5061</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#77000000</color>
+
+    <color name="text_black">#33312F</color>
+    <color name="text_prompt">#808080</color>
+    <color name="text_hint">#CCCCCC</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <color name="bg_white">#F2F2F2</color>
+    <color name="bt_green">#6B8E23</color>
+    <color name="bg_ripple">#15333333</color>
+    <color name="line">#E6E6E6</color>
+
+    <color name="statusBarColor">@color/colorPrimary</color>
+    <color name="navigationBarColor">@android:color/black</color>
+</resources>

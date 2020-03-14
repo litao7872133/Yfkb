@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--swipeback需要 设置窗口透明，避免滑动时是黑的(但是8.0以上会报异常)-->
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!-- 不确定下面3个的意义，可能需要在5.0已下的手机中测试 -->
+        <item name="android:statusBarColor" tools:targetApi="21">@color/statusBarColor</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/navigationBarColor</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>
+    </style>
+
+    <!--启动页-->
+    <style name="WelcomeTheme" parent="AppThemeMain">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--启动背景图-->
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <!-- swipeback需要  -->
+    <style name="AppThemeMain" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <!-- 透明的界面,无动画 （在8.0系统会报错：只有不透明的全屏activity可以自主设置界面方向） -->
+    <style name="AppThemeTransparent" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 等待弹窗样式 -->
+    <style name="ProgresstDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/dialogAnimation</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- AlertDialog,DialogFragment的样式（亮色，主题色） -->
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/dialogAnimation</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--弹窗动画-->
+    <style name="dialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+
+</resources>

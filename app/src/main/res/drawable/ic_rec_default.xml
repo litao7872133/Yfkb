@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 默认的方形-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#17777777"/>
+    <size
+        android:width="48dp"
+        android:height="48dp" />
+
+    <!--可以设置圆角-->
+    <!--<corners android:radius="4dp"/>-->
+
+</shape>
