@@ -16,10 +16,10 @@ android {
 
     signingConfigs {
         config {
-            keyAlias 'bonvo'
-            keyPassword 'bonvo#999'
-            storeFile file('C:/Android/key/bw.jks')
-            storePassword 'bonvo#999'
+            keyAlias 'yfkb'
+            keyPassword 'yfkb#999'
+            storeFile file('C:/Android/key/yfkb.jks')
+            storePassword 'yfkb#999'
         }
     }
 
@@ -41,7 +41,7 @@ android {
             minifyEnabled true
             buildConfigField("String", "INTERFACE", NORMAL_INTERFACE_HOST)
             buildConfigField("boolean", "IS_SHOW_LOG", NORMAL_SHOW_LOG)
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 

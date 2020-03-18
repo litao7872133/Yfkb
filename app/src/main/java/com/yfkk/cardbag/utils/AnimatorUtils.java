@@ -160,7 +160,7 @@ public class AnimatorUtils {
     public static void startAnimatorHeight(Context context, final View view, final int startHeight, final int endHeight) {
         // 重现
         ValueAnimator valueAnimator = ValueAnimator.ofInt(startHeight, endHeight);
-        valueAnimator.setDuration(Math.abs(startHeight - endHeight) / StringUtils.dpToPx(context, 2.5f) + 250);
+        valueAnimator.setDuration(Math.abs(startHeight - endHeight) / StringUtils.dpToPx(context, 2.5f) + 1250);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {

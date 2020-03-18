@@ -5,7 +5,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.yfkk.cardbag.ui.fragment.HomeBuyFragment;
+import com.yfkk.cardbag.ui.fragment.HomeCardFragment;
 import com.yfkk.cardbag.ui.fragment.HomeMainFragment;
+import com.yfkk.cardbag.ui.fragment.HomeMyFragment;
 
 /**
  * 主页
@@ -24,11 +27,11 @@ public class HomeAdapter extends FragmentPagerAdapter {
             case 0:
                 return HomeMainFragment.getInstance();
             case 1:
-                return HomeMainFragment.getInstance();
+                return HomeBuyFragment.getInstance();
             case 2:
-                return HomeMainFragment.getInstance();
+                return HomeCardFragment.getInstance();
             case 3:
-                return HomeMainFragment.getInstance();
+                return HomeMyFragment.getInstance();
         }
         return HomeMainFragment.getInstance();
     }

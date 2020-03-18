@@ -14,10 +14,11 @@
     <color name="transparent">#00000000</color>
     <color name="translucent">#77000000</color>
 
-    <color name="text_black">#33312F</color>
+    <color name="text_black">#272727</color>
     <color name="text_prompt">#808080</color>
-    <color name="text_hint">#CCCCCC</color>
+    <color name="text_hint">#C3C1C1</color>
     <color name="text_white">#FFFFFF</color>
+    <color name="text_red">#FD6E6B</color>
 
     <color name="bg_white">#F2F2F2</color>
     <color name="bt_green">#6B8E23</color>

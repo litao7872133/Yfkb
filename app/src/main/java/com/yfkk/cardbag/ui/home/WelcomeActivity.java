@@ -28,7 +28,7 @@ public class WelcomeActivity extends BaseActivity {
     }
 
     private void nextActivity() {
-        finish();
         startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+        finish();
     }
 }
